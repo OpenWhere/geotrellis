@@ -44,8 +44,7 @@ object ByteArrayTile {
         val v = bytes(i)
         if(v == replaceNoData)
           arr(i) = byteNODATA
-        else
-          arr(i) = v
+        arr(i) = bytes(i)
       }
       ByteArrayTile(arr, cols, rows)
     }
